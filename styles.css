@@ -1,20 +1,27 @@
 /* Master Styles */
+html, body, #container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+body {
+  padding-top: 60px;
+  background-color: #e4e1da;
+}
+
 h1 {
-  color: #369; 
-  font-family: Arial, Helvetica, sans-serif;   
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
-h2, h3 { 
+h2, h3 {
   color: #444;
-  font-family: Arial, Helvetica, sans-serif;   
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
-body { 
-  margin: 2em; 
-}
-body, input[text], button { 
-  color: #888; 
-  font-family: Cambria, Georgia; 
+body, input[text], button {
+  color: #888;
+  font-family: Cambria, Georgia;
 }
 a {
   cursor: pointer;
@@ -34,7 +41,7 @@ button:hover {
 }
 button:disabled {
   background-color: #eee;
-  color: #aaa; 
+  color: #aaa;
   cursor: auto;
 }
 
@@ -136,7 +143,25 @@ nav a.router-link-active {
   border-radius: 4px 0 0 4px;
 }
 
+#sidebar {
+    width: 240px;
+    height: 100%;
+    max-width: 100%;
+    float: left;
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    background-color: #ffffff;
+}
+
+#map {
+    width: auto;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
 /* everywhere else */
-* { 
-  font-family: Arial, Helvetica, sans-serif; 
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }

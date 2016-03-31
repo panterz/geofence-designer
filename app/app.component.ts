@@ -1,7 +1,12 @@
 import {Component} from 'angular2/core';
+import {MapComponent} from './map/map.component';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    templateUrl: 'app/app.component.html',
+    styleUrls: ['app/app.component.css'],
+    directives: [MapComponent]
 })
-export class AppComponent { }
+export class AppComponent {
+
+}
